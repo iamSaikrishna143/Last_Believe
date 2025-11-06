@@ -1,0 +1,212 @@
+1- Virtualization
+-----------------------------
+Hypervisor-
+It is software that create and runs virtual machine (VMs)
+
+How Hypervisor Works?
+- virtual bix share hardware  resources from  host OS.
+- Separate set of virtual CPU, RAM, storage etc.
+- VMs are fully isolated (Independent oh hosted OS).
+
+Benfits of VMs
+-----------------
+- We don't need new resouces to use different OS.
+- No risk of any issues with your primary OS.
+- Testing any app on different OS.
+
+Types of Hypervisor
+--------------------
+1- Type1(Bare Metal) - used by cloud providers and enterprise servers
+2- Type2(hosted)
+
+
+Why do use Virtualization?
+- Cheap
+- Reduces
+    - workload
+    - Space
+    - Energy
+- Easy backup using snapshot
+- Easy recovery
+
+
+Cloud Computing
+-----------------------
+On demand delivery of IT resources over the Internet with pay-as-you-go pricing.
+- Access computing resources (like servers,storage,databases, and software) over the 
+internet, rather than owning and maintaining physical hardware.
+- Amazon Web Services (AWS)
+- Microsft Azure
+- Google Cloud
+- IBM Cloud
+- Oracle Cloud
+- Alibaba Cloud
+- DigitaOccean
+- Salesforce
+- VMware Cloud
+- Rackspace Cloud
+
+- Virtualization is the process of creating multiple simulated environments or virtual
+machines from a single physical hardware system, enabling more efficient respurce
+use.
+
+
+Types Cloud Computing
+-----------------------------
+- IAAS (Infrastructure as a Service)
+- PAAS (Platform)
+- SAAS (Software)
+
+
+IAAS
+--------
+IaaS contains the basic building blocks for cloud IT. it typically provides
+access to networking features , computers (Virtual or on dedicated hardware),and 
+data storage space. IAAs gives you the highest level of flexibility and 
+management control over you  IT resources. it is must similar to the existing 
+IT resources with which many IT departments and developers are familiar.
+
+PAAS
+--------
+PaaS removes the need for you to manage underlying infrastructure
+(usually hardware and operating systems), and allows you to focus on
+the deployment and management of your applications. This helps you
+be more efficient as you don't need to worry about resource
+procurement, capacity planning, software maintenance, patching, or any
+of the other undifferentiated heavy lifting involved in running your
+application.
+
+
+SAAS
+-----
+SaaS provides you with a complete product that is run and managed by
+the service provider. In most cases, people referring to SaaS are referring
+to end-user applications (such as web-based email). With a SaaS
+offering, you don't have to think about how the service is maintained or
+how the underlying infrastructure is managed. You only need to think
+about how you will use that particular software.
+
+
+
+Different types of CLoud deployment
+---------------------------------------
+1- Public Cloud
+2- Private Cloud
+3- hybrid Cloud
+
+· Public Cloud: A shared cloud environment where multiple
+users can access services over the internet, like AWS or
+Azure.
+
+· Private Cloud: A dedicated cloud environment for one
+organization, offering more control and privacy.
+
+· Hybrid Cloud: A mix of public and private clouds, allowing
+data and applications to move between them for flexibility.
+
+
+-------------------
+FEW FEATURES COMMONLY OFFERED BY CLOUD PROVIDERS:
+
+. COMPUTE SERVICES
+. STORAGE SERVICES
+· DATABASE SERVICES
+· NETWORKING SERVICES
+· CONTAINER SERVICES
+· SERVERLESS COMPUTING
+. MACHINE LEARNING SERVICES
+. IDENTITY AND ACCESS MANAGEMENT (IAM)
+· MONITORING AND LOGGING
+. CONTENT DELIVERY NETWORK (CDN)
+· BACKUP AND DISASTER RECOVERY
+· SECURITY AND COMPLIANCE TOOLS
+· VIRTUAL PRIVATE CLOUD (VPC)
+· DATA ANALYTICS SERVICES
+· API MANAGEMENT
+
+
+Overview of allows
+------------------------
+AWS offers a vast range of services, including compute power, storage solutions,
+networking, databases and much more.
+- It offers a pay-as-you-go model, allowing you to pay only for what you
+use which is ideal for optimizition costs.
+- AWS was lunched in 2006 as the first public cloud platform.
+
+- Started with Amazon S3 for storage and EC2 for compute power.
+* Now expanded into offering over 200 fully featured services accross
+ various domains like AI, machine learning, IOT and more...
+
+ What makes AWS so special?
+ - Scalability, Global reach, Relibilty, SECURITY
+
+ Popular Services Provided by AWS
+
+Most popular ones include EC2 for scalable compute
+capacity, S3 for highly reliable storage, RDS for
+managed databases, Lambda for serverless computing,
+and CloudFront for content delivery.
+
+
+AWS IAM
+-------------
+AWS Identity & Access management
+
+IAM is a service that helps you securely control
+access to AWS resources.
+
+It allows you to manage users, roles, and permissions
+to define who can access what within your AWS
+environment.
+
+
+· Free Service: IAM is offered at no additional cost
+
+· Global Service
+
+· Root account created by default, shouldn't be
+used or shared
+
+
+-------------------
+· Create Users: You can create individual user accounts for people
+who need access to your AWS resources.
+
+. Assign Permissions: You can assign specific permissions to users,
+groups, or roles to control what actions they can perform on AWS
+services.
+
+· Create Groups: You can group users together and assign permissions
+to the group, making management easier for multiple users.
+
+
+. Create Roles: You can create roles to assign temporary permissions to AWS
+services or users, especially useful for securely managing permissions
+across different AWS resources.
+
+· Define Policies: You can create and attach custom policies to define fine-
+grained permissions for controlling access to AWS resources.
+
+· Manage Federated Access: IAM allows integrating with external identity
+providers (like Active Directory) for centralized management of user
+access across AWS.
+
+
+AWS IAM MFA
+-----------------------
+MFA (Multi-Factor Authentication) is an extra layer of
+security that requires users to provide two or more
+forms of verification, like a password and a code from
+their phone, to access their accounts.
+
+Ways of accessing AWS
+-----------------------
+· The AWS Management Console provides a graphical, web-
+based approach.
+
+· The AWS CLI provides a command-line, scripting approach.
+
+. AWS SDKs and APIs offer programmatic, code-based access,
+allowing users to integrate AWS directly into their
+applications.
+

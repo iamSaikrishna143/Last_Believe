@@ -1,0 +1,171 @@
+
+Next JS Notes
+---------------------
+
+### Introduction
+JS is a high-level, dynamic, and interpreted programming language that is primarily used for client-side scripting
+on the web. It is known for its simplicity, flexibility, and ability to add interactivity to
+web pages.
+
+- npx create-next-app@latest foldername/  .
+- npm install
+- npm run dev
+
+
+Project Structure
+-----------------------------------------
+- components/
+- Header.js
+- Footer.js
+- pages/
+- index.js
+- _app.js
+- _document.js
+- public/
+- index.html
+- styles/
+- globals.css
+### Components
+Components are reusable pieces of code that can be used throughout the application. They are typically
+defined in a separate file and imported into the main application file.
+
+
+  Routes RSC (React Server Component)
+  --------------------------------------
+  React Team interduced a new architecture called RSC (React Server Components) which is a new way to build
+  server-rendered React applications. It allows you to render React components on the server, which can
+  improve performance and SEO.
+
+There are two types of components in Next.js:
+1. Server Components: These are components that are rendered on the server. They are typically used for
+static pages and can improve performance and SEO.
+ - but we can't use hooks in server components and handle user interaction.
+2. Client Components: These are components that are rendered on the client-side. They are typically used
+for dynamic pages and can improve user experience.
+
+- to create a client component in Next.js we have to use "useclient" directive at the top of you component file.
+- client component cannot perform server-side tasks like reading files, but we can use hooks and handle user interaction.
+- cleint component same as we create a component in react app.
+
+Routing
+------------------
+- Next js has a file-system based routing system, which means that the routes are defined in the file system.
+- pages directory is used to define routes in Next.js.
+
+Routing Convention
+-------------------
+- All routes must live inside the app folder
+- Routes files must be named  either page.js or page.tsx
+
+types:-
+Normal Routes,
+Dynamic Routes,
+File-based Routing
+
+Not Found Page
+----------------
+- Next.js provides a built-in "404" page that can be used to handle not found routes
+- we can customize the not found page by creating a new file called _error.js in the pages
+directory.
+
+
+file colocation
+----------------
+- Next.js uses a concept called file colocation, which means that the code that is used in
+a page should be located in the same file as the page.
+- This is because Next.js uses a technique called "static site generation" to pre-render pages at
+build time, and it needs to be able to find the code that is used in a page in
+order to do this.
+
+
+Private folder
+----------------
+
+- that folder and subfolders are excluded  from routing.
+- Add and underscore (_) at the begining of the folder name to make it private. 
+- or we can use %5F (underscore) in url to make it private.
+- even if you have page.tsx inside folder with underscore, it will not be routed.
+
+Route Group
+----------------
+- this helps in orgainzing routes and project files in a logical way while keeping  the URL Structure intact.
+
+Layout
+----------------
+- Layout is UI Component where all your routes render as children.
+- any code tou write in your layout will affect all the routes that are rendered in that layout.
+
+- we have to create layout.tsx and layout.js file.
+- that component takes children prop, and children, are nothing but your Route page.
+
+Nested Layout
+----------------
+- we can have nested layouts, where we can have a layout inside another layout.
+- we can use the useLayoutEffect hook to get the current layout and use it to render th
+e content.
+
+Routing Metadata
+----------------
+- Metadata plays a crucial role in enhancing SEO and improving web sharebility by providing essential information about your webpages.
+- We have two ways to add metadata in next js
+1. static metadata
+2. dynamic metadata
+
+Link Component
+----------------
+- Link component is used to navigate between routes.
+- it is used to prevent the browser from making a full page reload when the user clicks on a
+link.
+example:
+<Link href="/about">About</Link>
+- we can also pass a shallow prop to link component to prevent the browser from making a full pag
+reload when the user clicks on a link.
+
+
+Active Link
+----------------
+- we can use the active prop to highlight the active link.
+- we can use the activeClassName prop to specify the class name that should be applied to the activ
+e link.
+- we can use the activeStyle prop to specify the styles that should be applied to the active link
+- we can use the exact prop to specify whether the link should be active only when the URL exactly
+matches the link's href.
+
+example:
+<Link href="/about" activeStyle={{ color: 'red' }}>About</Link>
+
+Params and searchParams
+----------------
+- we can use the params prop to pass parameters to a route.
+- we can use the searchParams prop to pass search parameters to a route.
+
+----
+- params is a promise that resolves to an object containing the dynamic IDs, as you provided in the name.
+- searchParams is a promise that resolves to an object containing query parameterd, such as sorting or filters.
+
+Template
+----------------
+- Template file is similar to a layout.
+- Template also share UI with your page.
+- whenever you navigate between routes which sharing same template you will get fresh view.
+- A new instance of the tempalte componentis mounted.
+- state is cleared.
+- DOM elements are recreated.
+
+
+Loading
+----------------
+- This helps you create meaningful Loading UI with react Suspense.
+- You can show an instant loading state from the server while the content of a route takes time to load.
+- To create loading in Newxt.js we have to create a file loading.tsx or loading.js
+
+Error handling
+----------------
+- This allows you to handle unexpected runtime errors and display fallback UI.
+- To handle error we can create an error file with the name error.tsx or error.js
+- This wrap a route segment and its nested children in a react Error boundary.
+
+
+
+Error handling in nested routes
+----------------

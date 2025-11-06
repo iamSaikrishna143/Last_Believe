@@ -1,0 +1,290 @@
+Introduction to Solid Principle
+---------------------------------------------
+Who Introduce Solid Principle?
+- Robert C. Martin (Uncle Bob) introduced the SOLID principles in 2000.
+ He is a well-known software engineer and author who has made significant
+  contributions to the field of software development.
+  - Co-founder of the Agile Manifesto
+
+- These principles were popularized in his book,
+ Agile Software development: Principles, Patterns, and Practices.
+
+ Why Were SOLID Principles Introduced?
+ - In the late 1990s and early 2000s, as software systems became more complex,
+developers needed a clear set of guidelines to make their code more
+maintainable and scalable.
+- SOLID principles were created to address common design issues, such as code
+that's difficult to modify or extend, and to help developers write clean,
+modular, and flexible code that can adapt to change over time.
+-Key Objective:
+The goal of SOLID is to guide developers in designing software that minimizes
+bugs, reduces dependencies, and is easier to understand and update. These
+principles have become foundational in object-oriented programming and
+software design.
+
+1. Single Responsibility Principle (SRP)
+--------------------------------------------------------
+- Definition : Each class or module should have only one
+reason to change, focusing on a single responsibility.
+- Example : Imagine a family setting where each person
+has a designated task-one cooks, another cleans,
+another handles finances. If one person had to do
+everything, tasks would overlap, and efficiency would
+drop.
+- Key Benefits : Enhances maintainability by focusing
+each class on one function.
+Reduces complexity and potential errors by segregating
+responsibilities.
+
+Incorrect Example-
+public class Employee {
+    public void work();
+    public void eat();
+    public void sleep();
+    }
+
+    Violates SRP as the class has multiple responsibilities. This code is not maintainable;
+any changes affect all tasks.
+
+Correct Example-
+class CookService { void cook() {} }
+class CleanService { void clean() {} }
+class LaundryService { void doLaundry() {} }
+
+Each class handles a specific task, following SRP principles.
+
+2 - Open/Closed Principle (OCP)
+-----------------------------------
+- Definition: Software entities should be open for extension but
+closed for modification.
+- Explanation: Imagine a restaurant menu: you can add new
+items to the menu without altering the existing dishes. This
+allows the restaurant to offer seasonal items without removing
+the regular favorites.
+- Key Benefits: Facilitates flexibility by allowing new
+functionalities to be added without changing existing code.
+Reduces the risk of introducing bugs when expanding features.
+
+Incorrect Example-
+class menu{
+    void addPizza(){}
+    void addBurger(){}
+}
+
+In this setup, whenever the restaurant wants to add a new dish a developer would have to modify the
+interface. Menu class to add a new method (e.g., addPastal). This violates the OCP because the Menu class is
+closed to modification; every time a new dish is introduced, the existing code needs to change.
+
+Risks: By modifying the Menu class, there's potential to introduce bugs in existing functionality (e.g., what
+if adding a new item inadvertently affects the logic continuously expand its menu without risking existing for existing items?).
+
+Correct Example-
+interface Menu { void add();}
+class PizzaMenu implements Menu { void addPizza() {} }
+class BurgerMenu implements Menu { void addBurger() {} }    
+
+- In this approach, Menu is open for extension. To add
+a new item, like Pasta, a developer just needs to
+create a new class that implements the Menu Item interface.
+- The existing Menu class remains unchanged; you only
+extend functionality by adding new classes. This
+keeps the original code intact, adhering to OCP.
+Benefits: This design allows the restaurant to
+continuously expand its menu without risking existing
+functionality, thus improving maintainability
+reducing potential errors.
+
+Example:-
+
+interface MenuItem{
+    add():void;
+}
+class Pizza implements MenuItem{
+    add():void{
+        console.log("Pizza added to the menu");
+    }
+}
+class Burger implements MenuItem{
+    add():void{
+        console.log("Burger added to the menu");
+    }
+}
+class Menu{
+    private items: MenuItem[];
+}
+addMenuItem(item:MenuItem):void{
+    this.items.push(item);
+    item.add();
+}
+displayItems():void{
+    console.log(`Menu curretly has ${this.items.length} items`);    
+}
+const menu = new Menu();
+menu.addMenuItem(new Pizza());
+menu.addMenuItem(new Burger());
+class Pasta implements MenuItem{
+    add():void{
+        console.log("Pasta added to the menu");
+    }
+}
+menu.addMenuItem(new Pasta());
+menu.displayItems()
+
+3 - Liskov Substitution Principle (LSP):
+--------------------------------------------
+- Subclasses should be able to replace their parent classes without altering the
+program's behaviour. This means any subclass should function in a way that is
+compatible with the expectations of its parent class.
+- Imagine a library with two types of items:
+a. Books - which library members can borrow and take home.
+b. Reference Materials - such as encyclopaedias or rare documents, which
+must remain in the library and cannot be borrowed.
+In this scenario, both Books and Reference Materials are part of the library
+system and have a common role as Libraryltem. However, they have
+different rules for usage:
+. Books should allow members to check them out.
+Reference Materials should display information but should not support
+borrowing.
+. Key Benefits: Enhances inheritance flexibility.
+. Avoids unexpected behaviours in derived classes.
+
+Incorrect Example:-
+class libraryItem{
+    title:string;
+    constructor(title:string){
+        this.title = title;
+    }
+    borrow():void{
+        console.log(`${this.title} has been borrowed`);
+    }
+}
+class Book extends Libraryltem{
+    constructor(title:string){
+        super(title);
+    }
+    borrow():void{
+        console.log(`${this.title} has been borrowed`);
+    
+}
+class ReferenceMaterial extends Libraryltem{
+    constructor(title:string){
+        super(title);
+    }
+    borrow():void{
+        throw new Error(`${this.title} cannot be borrowed.)
+    }
+}
+const book:Libraryltem=new Book("Saikrishna");
+book.borrow() // Output: Saikrishna has been borrowed
+const reference:Libraryltem=new ReferenceMaterial("sdesexcx");
+reference.borrow() // Output: throws exception {violates LSP}
+
+----Correct Example
+abstract class Libraryltem{
+    title: string;
+    constructor(title: string) {
+        this.title = title;
+    }
+}
+interface Borrowable {
+    borrow(): void;
+}
+class Book extends Libraryltem implements Borrowable {
+    constructor(title:string){
+        super(title);
+    }
+    borrow():void{
+        console.log(`${this.title} has been borrowed`);
+    }
+}
+class ReferenceMaterial extends Libraryltem{
+    constructor(title:string){
+        super(title);
+    }
+}
+const book:Borrowable=new Book("Saikrishna");
+book.borrow() // Output: Saikrishna has been borrowed
+const ref:Libraryltem= new ReferenceMaterial("sdesexcx");
+console.log(`You can only view ${ref.title}.`); // Output: You can only view sdesexcx.
+
+---------2nd Incoorect Example
+class Bird{
+    fly():void{
+        console.log("Bird is flying");
+        }
+}
+class Penguin extends Bird{
+    fly():void{
+        throw new Error("Penguins cannot fly");
+    }
+}
+---------Correct way
+abstract class Bird{
+    abstract fly():void;
+}
+class FlyingBird extends Bird{
+    move():void{
+        console.log("Bird is flying");
+    }
+}
+class NonFlyingBird extends Bird{
+    move():void{
+        console.log("Bird is walking");
+    }
+}
+const FlyingBird:Bird=new FlyingBird();
+FlyingBird.fly() // Output: Bird is flying
+const nonFlyingBird:Bird= new NonFlyingBird();
+nonFlyingBird.move(); // Output: Bird is walking
+
+
+4- Interface Segregation Principle(ISP)
+-------------------------------------------------------
+The Interface Segregation Principle (ISP) states that no
+client should be forced to depend on methods it does
+not use. In simpler terms, it's better to have many small,
+specific interfaces rather than a large, general-purpose
+interface.
+Scenario: Imagine a vehicle interface that includes
+methods for driving, flying, and sailing. A Car class
+must implement all these methods, even though cars
+cannot fly or sail, resulting in unnecessary exceptions
+and complicating the code.
+Key Benefits:
+1.
+
+Keeps interfaces clean, focused, and relevant to
+their specific tasks.
+
+2.
+
+Prevents bloated and complex interfaces that can
+be challenging to implement.
+
+5- Dependency Inversion Principle(DIP)
+---------------------------------------------
+Concept: The Dependency Inversion Principle (DIP) states that high-level modules should not
+depend on low-level modules. Both should depend on abstractions (e.g., interfaces).
+Abstractions should not depend on details; rather, details should depend on abstractions.
+. Scenario: Imagine you have various computer accessories like a mouse, keyboard, and external
+
+PORT
+
+hard drive.
+1. Without DIP: Each accessory has its own unique port type - the mouse has a circular
+port, the keyboard has a square port, and the hard drive has a different port entirely.
+Problem: You need separate ports for each accessory, making it difficult to connect new
+types of devices. If you get a new accessory, it may not fit your computer at all!
+2. With DIP: All accessories use a standard USB port. Your computer has a USB port that
+works with any USB-compatible device, regardless of the type (mouse, keyboard, hard
+drive, etc.). Benefit: You can easily connect or swap out different accessories without
+needing new ports or cables for each one. This setup is flexible and future-proof - as
+long as it's USB-compatible, it works!
+· Key Benefits of DIP:
+1.
+
+Encourages loose coupling and flexibility.
+
+2.
+
+Enables easy modifications by introducing abstractions.
