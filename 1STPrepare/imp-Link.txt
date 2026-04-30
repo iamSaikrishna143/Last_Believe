@@ -1,0 +1,406 @@
+Excel Zero to Hero Tutorial with AI 🚀 | 18 Hours Detailed Tutorial
+https://www.youtube.com/watch?v=5Z2PTHdHUXY
+
+
+Complete Shopify Store Setup Course in Hindi (2025) 🔥 Best Shopify Tutorial for Beginners to Pro
+https://www.youtube.com/watch?v=_iZp66ycgfE&t=160s
+
+
+
+
+If you have ~3 years of frontend experience, the expectation is no longer just “knowing React.” You’re expected to build scalable apps, make architectural decisions, optimize performance, and collaborate like an engineer—not just a coder.
+
+So I’ll give you **must-have skills (industry expectation)** with **beginner → advanced learning links**.
+
+---
+
+
+
+
+# 🚀 1. Core Web Fundamentals (Strong Foundation)
+
+### Must Know
+
+* HTML5 (semantic, accessibility)
+* CSS3 (Flexbox, Grid, responsive)
+* JavaScript (ES6+ deep concepts)
+
+### Learn:
+
+* 📘 MDN Web Docs
+  👉 [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
+* 📘 JavaScript.info
+  👉 [https://javascript.info/](https://javascript.info/)
+
+### Advanced Topics:
+
+* Closures, Hoisting, Event Loop
+* Promises, Async/Await
+* Prototype & Inheritance
+
+---
+
+# ⚛️ 2. React (Core + Advanced)
+
+### Must Know
+
+* Hooks (useState, useEffect, useMemo, useCallback)
+* Component design & reusability
+* Forms & validation
+* Routing
+
+### Learn:
+
+* 📘 React Official Docs
+  👉 [https://react.dev/](https://react.dev/)
+
+### Advanced:
+
+* Custom Hooks
+* Performance optimization
+* Code splitting (lazy, suspense)
+* Server Components (latest trend)
+
+---
+
+# 🟦 3. TypeScript (MANDATORY in 2026)
+
+### Must Know
+
+* Types, Interfaces
+* Generics
+* Type narrowing
+* Utility types
+
+### Learn:
+
+* 📘 TypeScript Docs
+  👉 [https://www.typescriptlang.org/docs/](https://www.typescriptlang.org/docs/)
+
+---
+
+# 🎨 4. Styling (Modern CSS + Frameworks)
+
+### Must Know
+
+* Tailwind CSS
+* SCSS / CSS Modules
+* Responsive Design
+
+### Learn:
+
+* 📘 Tailwind CSS
+  👉 [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
+
+---
+
+# 🔄 5. State Management
+
+### Must Know
+
+* Context API
+* Redux Toolkit / Zustand
+
+### Learn:
+
+* 📘 Redux Toolkit
+  👉 [https://redux-toolkit.js.org/](https://redux-toolkit.js.org/)
+
+* 📘 Zustand
+  👉 [https://docs.pmnd.rs/zustand/getting-started/introduction](https://docs.pmnd.rs/zustand/getting-started/introduction)
+
+---
+
+# 🌐 6. API Handling & Data Fetching
+
+### Must Know
+
+* REST APIs
+* Axios / Fetch
+* Caching & re-fetching
+
+### Learn:
+
+* 📘 Axios
+  👉 [https://axios-http.com/](https://axios-http.com/)
+
+* 📘 TanStack Query
+  👉 [https://tanstack.com/query/latest](https://tanstack.com/query/latest)
+
+---
+
+# ⚡ 7. Performance Optimization
+
+### Must Know
+
+* Lazy loading
+* Memoization
+* Bundle optimization
+
+### Learn:
+
+* 📘 Web.dev
+  👉 [https://web.dev/](https://web.dev/)
+
+---
+
+# 🧪 8. Testing (Important for Senior Roles)
+
+### Must Know
+
+* Unit testing
+* Component testing
+
+### Learn:
+
+* 📘 Jest
+  👉 [https://jestjs.io/docs/getting-started](https://jestjs.io/docs/getting-started)
+
+* 📘 React Testing Library
+  👉 [https://testing-library.com/docs/react-testing-library/intro/](https://testing-library.com/docs/react-testing-library/intro/)
+
+---
+
+# 🧰 9. Build Tools & Dev Tools
+
+### Must Know
+
+* Vite / Webpack
+* Git (advanced usage)
+* Chrome DevTools
+
+### Learn:
+
+* 📘 Vite
+  👉 [https://vitejs.dev/guide/](https://vitejs.dev/guide/)
+
+---
+
+# 🌍 10. Next.js (HIGH DEMAND)
+
+### Must Know
+
+* SSR, SSG
+* Routing
+* API routes
+
+### Learn:
+
+* 📘 Next.js
+  👉 [https://nextjs.org/docs](https://nextjs.org/docs)
+
+---
+
+# 🧠 11. System Design (Frontend)
+
+### Must Know
+
+* Component architecture
+* Folder structure
+* Scalability
+* Reusability
+
+👉 Learn:
+
+* [https://frontendmastery.com/](https://frontendmastery.com/)
+* [https://www.patterns.dev/](https://www.patterns.dev/)
+
+---
+
+# 🔐 12. Authentication & Security
+
+### Must Know
+
+* JWT
+* OAuth basics
+* Secure storage
+
+---
+
+# 📊 13. Bonus (To Stand Out)
+
+* PWA
+* WebSockets
+* Micro Frontends
+* GraphQL
+  👉 GraphQL Docs: [https://graphql.org/learn/](https://graphql.org/learn/)
+
+---
+
+# 💡 Reality Check (Important)
+
+At 3 years experience, companies expect:
+
+* You can build **production-ready apps**
+* You understand **performance + architecture**
+* You can solve **machine coding rounds**
+
+---
+
+# 🎯 What You Should Do Next (Action Plan)
+
+Since you already know React & Angular:
+
+1. Master **TypeScript + React deeply**
+2. Build **2 advanced projects**:
+
+   * Scalable dashboard (with charts, auth)
+   * Real-time app (chat / notifications)
+3. Practice **machine coding daily (1–2 problems)**
+
+
+
+
+
+At ~3 years experience, companies expect you to **choose the right libraries—not just use many**. The goal is productivity + scalability + performance.
+
+Here are the **most useful 3rd-party libraries (widely used in industry)** with when and why to use them 👇
+
+---
+
+# 🚀 1. API & Server State Management
+
+### ⭐ Must-have
+
+* **Axios**
+  👉 Simple API calls, interceptors, error handling
+
+* **TanStack Query**
+  👉 Caching, auto refetch, loading states (industry favorite)
+
+📌 Use this instead of manually managing API state in useEffect
+
+---
+
+# 🧠 2. Global State Management
+
+### ⭐ Most used
+
+* **Redux Toolkit**
+  👉 Enterprise apps, predictable state
+
+* **Zustand**
+  👉 Lightweight & easy (modern choice)
+
+📌 Trend: Many companies prefer **Zustand + React Query combo**
+
+---
+
+# 🎨 3. UI Component Libraries
+
+### ⭐ Save tons of time
+
+* **Material UI**
+* **Ant Design**
+* **shadcn/ui**
+
+📌 Use for:
+
+* Forms
+* Tables
+* Modals
+* Dashboards
+
+---
+
+# 🧾 4. Forms & Validation
+
+### ⭐ Must know
+
+* **React Hook Form**
+* **Yup** / **Zod**
+
+📌 Why:
+
+* Better performance than controlled forms
+* Easy validation
+
+---
+
+# 🌐 5. Routing
+
+* **React Router**
+
+📌 Needed for SPA navigation
+
+---
+
+# ⚡ 6. Utility Libraries
+
+### ⭐ Very helpful
+
+* **Lodash**
+  👉 debounce, clone, deep compare
+
+* **date-fns**
+  👉 date formatting & manipulation
+
+---
+
+# 📊 7. Charts & Visualization
+
+* **Recharts**
+* **Chart.js**
+
+📌 Needed for dashboards
+
+---
+
+# 🔔 8. Notifications & UX
+
+* **React Toastify**
+* **SweetAlert2**
+
+---
+
+# 🧪 9. Testing
+
+* **Jest**
+* **React Testing Library**
+
+---
+
+# 🔐 10. Authentication
+
+* **Firebase**
+* **Auth0**
+
+---
+
+# 📦 11. Build Tools
+
+* **Vite**
+* **Webpack**
+
+---
+
+# 🔥 12. Animation Libraries (High Impact UI)
+
+* **Framer Motion**
+
+---
+
+# 💡 Reality Check (Very Important)
+
+You don’t need all of them.
+
+### ✅ Ideal Stack (Industry Standard)
+
+* React + TypeScript
+* TanStack Query
+* Zustand / Redux Toolkit
+* React Hook Form + Zod
+* Tailwind + shadcn/ui
+* Axios
+
+---
+
+# 🎯 Pro Tip
+
+Interviewers don’t care how many libraries you know.
+
+They care:
+
+* Why you chose it
+* When NOT to use it
+* Performance impact

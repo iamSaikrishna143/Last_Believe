@@ -1,25 +1,4 @@
 
-// 𝐑𝐞𝐚𝐜𝐭 𝐓𝐡𝐞𝐨𝐫𝐲 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
-// *What is React? Why use it?
-// *What are components in React?
-// *What is JSX?
-// *Explain virtual DOM and how it works.
-// *What are props and state?
-// *What is the difference between functional and class components?
-// *What is the useEffect Hook? How is it different from componentDidMount?
-// *What are controlled vs uncontrolled components?
-// *What is prop drilling? How to avoid it?
-// *What are keys in React? Why are they important?
-// *What is React.memo and how does it help performance?
-// *What is the reconciliation process in React?
-// *How does React handle re-rendering?
-// *What is context API and when should it be used?
-// * Explain the React lifecycle methods.
-// *What are HOCs (Higher-Order Components)?
-// *What is React Fiber?
-// *What are render props?
-
-
 // 1.	𝗪𝗵𝗮𝘁 𝗶𝘀 𝘁𝗵𝗲 𝗩𝗶𝗿𝘁𝘂𝗮𝗹 𝗗𝗢𝗠 𝗮𝗻𝗱 𝗵𝗼𝘄 𝗱𝗼𝗲𝘀 𝗥𝗲𝗮𝗰𝘁 𝘂𝘀𝗲 𝗶𝘁 𝗳𝗼𝗿 𝗿𝗲𝗻𝗱𝗲𝗿𝗶𝗻𝗴?
 // What is the Virtual DOM?
 // •	The DOM (Document Object Model) is the browser’s tree-like structure that represents all elements of a webpage.
@@ -37,7 +16,7 @@
 // o	When data changes (state or props), React rebuilds a new Virtual DOM for that component tree.
 // 3.	Diffing Algorithm (Reconciliation)
 // o	React compares the new Virtual DOM with the previous Virtual DOM (using an efficient algorithm called diffing).
-// o	It identifies the minimal set of changes needed.
+// o	It identifies the minimal set of changes needed.b   
 // 4.	Update the Real DOM
 // o	React applies only those changes to the actual DOM (not the entire UI).
 // o	This makes updates faster and more efficient.
@@ -1619,8 +1598,8 @@
 
 
 
-// // 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐂𝐨𝐝𝐢𝐧𝐠
-// // *Build a counter app with increment, decrement and reset buttons.
+// 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐂𝐨𝐝𝐢𝐧𝐠
+// *Build a counter app with increment, decrement and reset buttons.
 // import React, { useState } from "react";
 
 // function CounterApp() {
@@ -1907,7 +1886,7 @@
 
 
 
-// // *Build a toggle switch (on/off with state).
+// *Build a toggle switch (on/off with state).
 // import React, { useState, useEffect } from "react";
 
 // function ToggleSwitch() {
@@ -1915,7 +1894,7 @@
 
 //   const handleToggle = () => setIsOn(prev => !prev);
 
-//   // Change body background based on toggle state
+  // Change body background based on toggle state
 //   useEffect(() => {
 //     document.body.style.backgroundColor = isOn ? "#d4f4dd" : "#f4d4d4"; // greenish for ON, reddish for OFF
 //   }, [isOn]);
@@ -1971,7 +1950,7 @@
 
 // export default ToggleSwitch;
 
-// // *Create a searchable list that filters items based on user input.
+// *Create a searchable list that filters items based on user input.
 // import React, { useState, useEffect } from "react";
 
 // function SearchableApiList() {
@@ -1980,7 +1959,7 @@
 //   const [loading, setLoading] = useState(true);
 //   const [error, setError] = useState(null);
 
-//   // Fetch data from API
+  // Fetch data from API
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
@@ -1998,7 +1977,7 @@
 //     fetchData();
 //   }, []);
 
-//   // Filter items by name based on search term
+  // Filter items by name based on search term
 //   const filteredItems = items.filter((item) =>
 //     item.name.toLowerCase().includes(searchTerm.toLowerCase())
 //   );
@@ -2032,7 +2011,7 @@
 //   );
 // }
 
-// // Inline styles
+// Inline styles
 // const styles = {
 //   container: { margin: "20px", fontFamily: "Arial, sans-serif" },
 //   input: { padding: "8px", width: "250px", marginBottom: "10px" },
@@ -2041,7 +2020,7 @@
 
 // export default SearchableApiList;
 
-// // *Implement a tabbed UI using conditional rendering.
+// *Implement a tabbed UI using conditional rendering.
 // import React, { useState } from "react";
 
 // function TabbedUI() {
@@ -2107,7 +2086,7 @@
 
 // export default TabbedUI;
 
-// // *Build a form with validation (e.g., email, password).
+// *Build a form with validation (e.g., email, password).
 // import React, { useState } from "react";
 
 // function LoginForm() {
@@ -2186,7 +2165,7 @@
 //   );
 // }
 
-// // Inline styles
+// Inline styles
 // const styles = {
 //   container: { margin: "20px", fontFamily: "Arial, sans-serif" },
 //   form: { display: "flex", flexDirection: "column", gap: "15px", maxWidth: "300px" },
@@ -2205,7 +2184,7 @@
 
 // export default LoginForm;
 
-// // *Build a star rating component with hover and click.
+// *Build a star rating component with hover and click.
 // import React, { useState } from "react";
 
 // function StarRating({ totalStars = 5 }) {
@@ -2248,8 +2227,8 @@
 
 // export default StarRating;
 
-// // *Build a custom dropdown using keyboard navigation.
-// // *Create a reusable modal component with backdrop and escape handling.
+// *Build a custom dropdown using keyboard navigation.
+// *Create a reusable modal component with backdrop and escape handling.
 // model.jsx
 // import React, { useState } from "react";
 // import Modal from "./Modal";
@@ -2281,7 +2260,7 @@
 // import React, { useEffect } from "react";
 
 // function Modal({ isOpen, onClose, children }) {
-//   // Close on Escape key
+  // Close on Escape key
 //   useEffect(() => {
 //     const handleKeyDown = (e) => {
 //       if (e.key === "Escape") {
@@ -2360,7 +2339,7 @@
 
 //   const observer = useRef();
 
-//   // Fetch posts from API
+  // Fetch posts from API
 //   const fetchPosts = async (page) => {
 //     setLoading(true);
 //     try {
@@ -2379,7 +2358,7 @@
 //     fetchPosts(page);
 //   }, [page]);
 
-//   // Observer for last element
+  // Observer for last element
 //   const lastPostRef = useCallback(
 //     (node) => {
 //       if (loading) return;

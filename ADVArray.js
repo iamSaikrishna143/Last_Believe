@@ -1,4 +1,6 @@
-// Sure! I can provide JavaScript implementations for all 25 string problems without using pre-built functions like .reverse(), .split(), .join(), or .includes() for logic. I’ll write them in a clean and step-by-step way.
+// Sure! I can provide JavaScript implementations for all 25 string problems without using pre-built functions like
+//  .reverse(), .split(), .join(), or .includes() for logic. I’ll write them in a clean and step-by-step way.
+
 
 // 1. Reverse a String
 function reverseString(str) {
@@ -6,8 +8,8 @@ function reverseString(str) {
     for (let i = str.length - 1; i >= 0; i--) {
         reversed += str[i];
     }
-    return reversed;
-}
+    return reversed;  
+}  
 
 // 2. Check if a String is a Palindrome
 function isPalindrome(str) {

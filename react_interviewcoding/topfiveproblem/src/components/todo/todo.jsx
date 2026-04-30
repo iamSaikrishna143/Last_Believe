@@ -110,7 +110,7 @@ const Todo = () => {
             }}
             onClick={() => setFilter(f)}
           >
-            {f}
+            {f}   
           </button>
         ))}
       </div>

@@ -21,7 +21,8 @@
 //  🔟 Explain Authentication and Authorization in .NET Core.
 
 // 🔥 Top 50 Most Famous Angular Interview Questions (2025 Edition)
-// If you’re preparing for Angular interviews - this list will help you revise the most frequently asked questions that test both fundamentals and real-world problem-solving.
+// If you’re preparing for Angular interviews - this list will help you
+//  revise the most frequently asked questions that test both fundamentals and real-world problem-solving.
 // 🧠 Core Angular Fundamentals
 //  1️⃣ What is Angular, and how is it different from AngularJS?
 //  2️⃣ Explain the architecture of an Angular application.

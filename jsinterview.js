@@ -619,7 +619,6 @@ if (typeof Object.assign !== "function") {
 // 20. What are the different datatypes in JavaScript?
 
 // Primitive: String, Number, Boolean, Null, Undefined, Symbol, BigInt
-
 // Non-primitive (Reference): Object, Array, Function
 
 // 21. Difference between TypeScript and JavaScript:
@@ -678,7 +677,7 @@ if (typeof Object.assign !== "function") {
 
 // 28. What is setInterval in JavaScript?
 
-// Executes a function repeatedly at a specified interval (in milliseconds).
+// Executes a function repeatedly  at a specified interval (in milliseconds).
 
 // Example:
 

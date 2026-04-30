@@ -111,7 +111,7 @@
 
 // 🔹 loaders → How to transform files (JSX, SCSS, etc.)
 
-// 🔹 plugins → Add extra powers (like injecting HTML)
+// 🔹 plugins → Add extra powers (like injecting HTML)/
 
 // 🔹 mode → Dev or Production
 

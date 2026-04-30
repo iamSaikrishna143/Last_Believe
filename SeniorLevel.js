@@ -212,7 +212,7 @@
 // 14. How does React handle side effects, and how can you manage them?
 // 15. How would you handle errors in React, and what is the role of error boundaries?
 
------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------
 
 
 // 1️⃣ Difference between JavaScript and other programming languages
@@ -2660,7 +2660,7 @@
 //   useEffect(() => {
 //     const interval = setInterval(() => setCount(c => c + 1), 1000);
     
-//     // Cleanup function to prevent memory leaks
+    // Cleanup function to prevent memory leaks
 //     return () => clearInterval(interval);
 //   }, []); // Empty dependency array → runs only on mount
 
