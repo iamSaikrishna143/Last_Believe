@@ -1,389 +1,685 @@
-// Here are **Top 100 Frontend Developer Interview Questions** (covering HTML, CSS, JavaScript, React/Angular, Performance, System Design) — structured from **Fresher → Experienced → Advanced** 🔥
+Here is a **complete HTML Interview Question & Answer set (Fresher → 3 Years Experience)**, starting basic and moving to advanced topics that are commonly asked in real interviews.
 
-// ---
+---
 
-// # 🔰 **1. Basic Frontend Questions (Fresher Level)**
+# 🟢 HTML Interview Questions & Answers (Fresher to 3 Years Experience)
 
-// ### HTML
+---
 
-// 1. What is HTML?
-// 2. What are semantic tags?
-// 3. Difference between `<div>` and `<span>`?
-// 4. What is SEO-friendly HTML?
-// 5. What is accessibility (a11y)?
+# 🔰 Level 1: Fresher (Basic HTML)
 
-// ### CSS
+## 1. What is HTML?
 
-// 6. What is CSS?
-// 7. Types of CSS?
-// 8. What is box model?
-// 9. Difference between margin and padding?
-// 10. What is flexbox?
-// 11. What is grid?
-// 12. Difference between flexbox and grid?
-// 13. What is responsive design?
-// 14. What is media query?
-// 15. What is z-index?
+**Answer:**
+HTML (HyperText Markup Language) is used to structure web pages using elements like headings, paragraphs, images, links, etc.
 
-// ### JavaScript Basics
+---
 
-// 16. What is JavaScript?
-// 17. Difference between `var`, `let`, `const`?
-// 18. What is closure?
-// 19. What is hoisting?
-// 20. What is event handling?
+## 2. What is a tag in HTML?
 
-// ---
+**Answer:**
+Tags are used to define HTML elements.
+Example:
 
-// # ⚙️ **2. Intermediate Frontend Questions**
+```html
+<p>Hello</p>
+```
 
-// 21. What is DOM?
-// 22. What is Virtual DOM?
-// 23. Difference between DOM and Virtual DOM?
-// 24. What is event bubbling and capturing?
-// 25. What is event delegation?
-// 26. What is debouncing and throttling?
-// 27. What is ES6?
-// 28. What are arrow functions?
-// 29. What is destructuring?
-// 30. What is spread/rest operator?
-// 31. What is async/await?
-// 32. What is Promise?
-// 33. What is API?
-// 34. What is REST API?
-// 35. What is JSON?
-// 36. What is CORS?
-// 37. What is localStorage vs sessionStorage?
-// 38. What is cookies?
-// 39. What is browser rendering process?
-// 40. What is critical rendering path?
+---
 
-// ---
+## 3. What is the difference between HTML and HTML5?
 
-// # ⚛️ **3. Framework (React / Angular) Questions**
+**Answer:**
 
-// 41. What is React?
-// 42. What is Angular?
-// 43. Difference between React and Angular?
-// 44. What is component-based architecture?
-// 45. What is state management?
-// 46. What are React Hooks?
-// 47. What is `useEffect`?
-// 48. What is Context API?
-// 49. What is Angular lifecycle hooks?
-// 50. What is RxJS?
-// 51. What is routing?
-// 52. What is lazy loading?
-// 53. What is SSR vs CSR?
-// 54. What is Next.js?
-// 55. What is NgRx?
+* HTML → Older version
+* HTML5 → Supports multimedia, semantic tags, APIs (canvas, audio, video)
 
-// ---
+---
 
-// # 🚀 **4. Advanced Frontend Questions**
+## 4. What is DOCTYPE?
 
-// 56. What is performance optimization?
-// 57. What is code splitting?
-// 58. What is tree shaking?
-// 59. What is lazy loading?
-// 60. What is memoization?
-// 61. What is caching?
-// 62. What is CDN?
-// 63. What is PWA?
-// 64. What is service worker?
-// 65. What is web worker?
-// 66. What is hydration?
-// 67. What is shadow DOM?
-// 68. What is micro frontend?
-// 69. What is design system?
-// 70. What is scalability in frontend?
+**Answer:**
+It tells the browser about the HTML version.
 
-// ---
+```html
+<!DOCTYPE html>
+```
 
-// # 🧠 **5. Scenario-Based Questions (VERY IMPORTANT)**
+---
 
-// 71. How do you optimize page load speed?
-// 72. How do you handle large API data?
-// 73. How do you avoid unnecessary re-renders?
-// 74. How do you structure a large project?
-// 75. How do you handle authentication?
-// 76. How do you implement role-based access?
-// 77. How do you secure frontend apps?
-// 78. How do you handle errors globally?
-// 79. How do you manage global state?
-// 80. How do you make reusable components?
+## 5. What are attributes?
 
-// ---
+**Answer:**
+Attributes provide extra information about elements.
 
-// # 🔥 **6. Coding / Practical Questions**
+```html
+<a href="https://google.com">Google</a>
+```
 
-// 81. Build a Todo App (CRUD)
-// 82. Create a responsive layout
-// 83. Implement debounce search
-// 84. Build infinite scroll
-// 85. Create a modal popup
-// 86. Build a form with validation
-// 87. Create a multi-select dropdown
-// 88. Implement dark mode toggle
-// 89. Fetch API and display data
-// 90. Implement pagination
+---
 
-// ---
+## 6. What is the difference between block and inline elements?
 
-// # 💼 **7. Experienced-Level / Real Interview Questions**
+**Answer:**
 
-// 91. Explain your frontend project architecture
-// 92. Folder structure best practices?
-// 93. How do you improve performance in your project?
-// 94. What challenges did you face?
-// 95. How do you handle cross-browser compatibility?
-// 96. How do you test frontend apps?
-// 97. What is unit testing?
-// 98. What tools do you use?
-// 99. How do you deploy frontend apps?
-// 100. How do you stay updated with new technologies?
+* Block → takes full width (`div`, `p`)
+* Inline → takes only required space (`span`, `a`)
 
-// ---
+---
 
-// # 🎯 **Pro Strategy for You (🔥 Important)**
+## 7. What is a void element?
 
-// Since you're targeting **Frontend Developer (2–3 years experience)**, focus on:
+**Answer:**
+Tags without closing tag.
 
-// ### 🔑 Must Master
+Examples:
 
-// ✔ JavaScript (Core + Async + Event Loop)
-// ✔ React / Angular (Hooks / RxJS)
-// ✔ API handling
-// ✔ Performance optimization
-// ✔ Responsive design
+```html
+<img />, <br />, <hr />
+```
 
-// ### 💼 Must Prepare
+---
 
-// ✔ 2–3 strong projects explanation
-// ✔ Real problem-solving examples
-// ✔ Clean code & reusable components
+# 🟡 Level 2: 1–2 Years Experience (Intermediate)
 
-// ---
+## 8. What are semantic elements?
 
-// # 🚀 Want Next Level Preparation?
+**Answer:**
+Elements that clearly describe meaning.
 
-// I can help you with:
+Examples:
 
-// ✅ Top 30 MOST ASKED questions with answers
-// ✅ Real interview coding questions + solutions
-// ✅ Mock interview (HR + Technical)
-// ✅ Resume + Project explanation for interview
+```html
+<header>, <footer>, <section>, <article>
+```
 
-// Just tell me 👍
+---
+
+## 9. Why are semantic tags important?
+
+**Answer:**
+
+* Improve SEO
+* Improve readability
+* Better accessibility
+
+---
+
+## 10. Difference between id and class?
+
+**Answer:**
+
+* `id` → unique
+* `class` → reusable
+
+---
+
+## 11. Difference between <div> and <span>?
+
+**Answer:**
+
+* `div` → block container
+* `span` → inline container
+
+---
+
+## 12. What is a form in HTML?
+
+**Answer:**
+Used to collect user input.
+
+```html
+<form>
+  <input type="text" />
+</form>
+```
+
+---
+
+## 13. Difference between GET and POST?
+
+**Answer:**
+
+* GET → Data visible in URL
+* POST → Data sent in request body
+
+---
+
+## 14. What is iframe?
+
+**Answer:**
+Used to embed another webpage.
+
+```html
+<iframe src="https://example.com"></iframe>
+```
+
+---
+
+## 15. What is meta tag?
+
+**Answer:**
+Provides metadata (SEO, charset, viewport).
+
+---
+
+# 🔵 Level 3: 2–3 Years Experience (Advanced HTML)
+
+## 16. What is HTML5?
+
+**Answer:**
+Latest version of HTML with new features like:
+
+* Semantic tags
+* Canvas
+* Audio/Video
+* Local storage
+
+---
+
+## 17. What is localStorage vs sessionStorage?
+
+**Answer:**
+
+* localStorage → data persists forever
+* sessionStorage → data cleared after tab closes
+
+---
+
+## 18. What is accessibility in HTML?
+
+**Answer:**
+Making websites usable for all users (including disabled users).
+
+Techniques:
+
+* alt attributes
+* semantic tags
+* ARIA roles
+
+---
+
+## 19. What are data attributes?
+
+**Answer:**
+Used to store custom data.
+
+```html
+<div data-user-id="101"></div>
+```
+
+---
+
+## 20. What is the purpose of canvas in HTML5?
+
+**Answer:**
+Used for drawing graphics via JavaScript.
+
+---
+
+## 21. Difference between HTML and XHTML?
+
+**Answer:**
+
+* HTML → flexible syntax
+* XHTML → strict syntax, all tags must close
+
+---
+
+## 22. What is responsive web design in HTML context?
+
+**Answer:**
+Making web pages adapt to different screen sizes using:
+
+* viewport meta tag
+* flexible layouts
+* media queries (CSS)
+
+---
+
+## 23. What is the viewport meta tag?
+
+**Answer:**
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+Used for responsive design.
+
+---
+
+## 24. What are ARIA attributes?
+
+**Answer:**
+Used for accessibility (screen readers).
+
+Example:
+
+```html
+<button aria-label="close"></button>
+```
+
+---
+
+## 25. What are deprecated tags in HTML?
+
+**Answer:**
+Old tags not recommended in HTML5 like:
+
+* `<font>`
+* `<center>`
+
+---
+
+## 26. What is SEO in HTML?
+
+**Answer:**
+Using proper tags (title, meta, headings) to improve search ranking.
+
+---
+
+## 27. What is lazy loading in HTML?
+
+**Answer:**
+Delays loading images until needed.
+
+```html
+<img src="image.jpg" loading="lazy">
+```
+
+---
+
+## 28. What is microdata in HTML?
+
+**Answer:**
+Used for structured data to improve SEO.
+
+---
+
+## 29. How does browser render HTML?
+
+**Answer:**
+
+1. Parse HTML
+2. Build DOM tree
+3. Apply CSS
+4. Render page
+
+---
+
+## 30. Difference between HTML parsing and rendering?
+
+**Answer:**
+
+* Parsing → converting HTML into DOM
+* Rendering → displaying UI on screen
+
+---
+
+# 🚀 Bonus Interview Questions (Frequently Asked)
+
+* What is DOM?
+* What is BOM?
+* What is difference between HTML, CSS, JS?
+* What is difference between cookie and localStorage?
+* What is progressive enhancement?
+
+---
 
 
 
 
+Here is a **CSS Interview Question & Answer set (Fresher → 3 Years Experience)** for your preparation.
 
+---
 
+# 🟢 CSS Interview Questions & Answers (Fresher to 3 Years Experience)
 
+---
 
+# 🔰 Level 1: Fresher (Basic CSS)
 
+## 1. What is CSS?
 
+**Answer:**
+CSS (Cascading Style Sheets) is used to style HTML elements like color, layout, fonts, spacing, etc.
 
-// Real coding question (build virtual list)
+---
 
+## 2. What are the types of CSS?
 
-import { useState } from "react";
+**Answer:**
 
-const ITEM_HEIGHT = 40;
-const TOTAL_ITEMS = 10000;
-const CONTAINER_HEIGHT = 400;
+1. Inline CSS
+2. Internal CSS
+3. External CSS
 
-export default function VirtualList() {
-  const [scrollTop, setScrollTop] = useState(0);
+Example:
 
-  const totalHeight = TOTAL_ITEMS * ITEM_HEIGHT;
+```html
+<p style="color:red;">Hello</p>
+```
 
-  // Calculate visible range
-  const startIndex = Math.floor(scrollTop / ITEM_HEIGHT);
-  const visibleCount = Math.ceil(CONTAINER_HEIGHT / ITEM_HEIGHT);
-  const endIndex = startIndex + visibleCount;
+---
 
-  const items = [];
-  for (let i = startIndex; i < endIndex; i++) {
-    if (i >= TOTAL_ITEMS) break;
-    items.push(
-      <div
-        key={i}
-        style={{
-          height: ITEM_HEIGHT,
-          borderBottom: "1px solid #ccc",
-        }}
-      >
-        Item {i}
-      </div>
-    );
-  }
+## 3. What is the difference between class and id in CSS?
 
-  return (
-    <div
-      style={{
-        height: CONTAINER_HEIGHT,
-        overflowY: "auto",
-        border: "1px solid black",
-      }}
-      onScroll={(e) => setScrollTop(e.target.scrollTop)}
-    >
-      <div style={{ height: totalHeight, position: "relative" }}>
-        <div
-          style={{
-            transform: `translateY(${startIndex * ITEM_HEIGHT}px)`,
-            position: "absolute",
-            width: "100%",
-          }}
-        >
-          {items}
-        </div>
-      </div>
-    </div>
-  );
+**Answer:**
+
+* `id` → unique (#id)
+* `class` → reusable (.class)
+
+---
+
+## 4. What is the CSS box model?
+
+**Answer:**
+Every element is a box with:
+
+* Content
+* Padding
+* Border
+* Margin
+
+---
+
+## 5. Difference between padding and margin?
+
+**Answer:**
+
+* Padding → space inside element
+* Margin → space outside element
+
+---
+
+## 6. What are selectors in CSS?
+
+**Answer:**
+Selectors are used to target HTML elements.
+
+Examples:
+
+```css
+p { }
+#id { }
+.class { }
+```
+
+---
+
+## 7. What is the difference between inline and block elements in CSS?
+
+**Answer:**
+
+* Inline → does not take full width
+* Block → takes full width
+
+---
+
+# 🟡 Level 2: 1–2 Years Experience (Intermediate CSS)
+
+## 8. What is specificity in CSS?
+
+**Answer:**
+Specificity decides which CSS rule is applied.
+
+Order:
+Inline > ID > Class > Element
+
+---
+
+## 9. What is position in CSS?
+
+**Answer:**
+Used to control element placement.
+
+Types:
+
+* static
+* relative
+* absolute
+* fixed
+* sticky
+
+---
+
+## 10. Difference between relative and absolute positioning?
+
+**Answer:**
+
+* relative → moves from original position
+* absolute → moves relative to nearest parent
+
+---
+
+## 11. What is Flexbox?
+
+**Answer:**
+Flexbox is used for layout alignment.
+
+```css
+display: flex;
+```
+
+---
+
+## 12. What is Grid in CSS?
+
+**Answer:**
+CSS Grid is used for 2D layouts (rows + columns).
+
+---
+
+## 13. Difference between Flexbox and Grid?
+
+**Answer:**
+
+* Flexbox → 1D layout
+* Grid → 2D layout
+
+---
+
+## 14. What is z-index?
+
+**Answer:**
+Controls stacking order of elements.
+
+---
+
+## 15. What is overflow in CSS?
+
+**Answer:**
+Controls content overflow behavior.
+
+Values:
+
+* hidden
+* scroll
+* auto
+
+---
+
+## 16. What are pseudo-classes?
+
+**Answer:**
+Defines element state.
+
+Examples:
+
+```css
+:hover
+:focus
+:nth-child()
+```
+
+---
+
+## 17. What are pseudo-elements?
+
+**Answer:**
+Used to style specific parts.
+
+Examples:
+
+```css
+::before
+::after
+```
+
+---
+
+# 🔵 Level 3: 2–3 Years Experience (Advanced CSS)
+
+## 18. What is CSS specificity hierarchy?
+
+**Answer:**
+
+1. Inline CSS
+2. ID selector
+3. Class selector
+4. Element selector
+
+---
+
+## 19. What is CSS Box Sizing?
+
+**Answer:**
+Defines how width and height are calculated.
+
+```css
+box-sizing: border-box;
+```
+
+---
+
+## 20. What is responsive design?
+
+**Answer:**
+Design that adapts to all screen sizes.
+
+---
+
+## 21. What are media queries?
+
+**Answer:**
+Used for responsive design.
+
+```css
+@media (max-width: 768px) {
+  body { background: red; }
 }
+```
 
+---
 
+## 22. What is CSS transition?
 
-// Design a **search autocomplete system
+**Answer:**
+Used for smooth animation effects.
 
-// App.js
-import { useState, useEffect, useRef } from "react";
+```css
+transition: all 0.3s ease;
+```
 
-export default function App() {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+---
 
-  const cache = useRef({});
-  const controllerRef = useRef(null);
+## 23. What is CSS animation?
 
-  useEffect(() => {
-    if (!query) {
-      setResults([]);
-      return;
-    }
+**Answer:**
+Used for keyframe-based animations.
 
-    const timer = setTimeout(() => {
-      fetchResults(query);
-    }, 300); // debounce
-
-    return () => clearTimeout(timer);
-  }, [query]);
-
-  const fetchResults = async (q) => {
-    // Check cache
-    if (cache.current[q]) {
-      setResults(cache.current[q]);
-      return;
-    }
-
-    // Cancel previous request
-    if (controllerRef.current) {
-      controllerRef.current.abort();
-    }
-
-    controllerRef.current = new AbortController();
-
-    try {
-      setLoading(true);
-      setError("");
-
-      const res = await fetch(
-        `https://api.datamuse.com/sug?s=${q}`,
-        { signal: controllerRef.current.signal }
-      );
-
-      if (!res.ok) throw new Error("API Error");
-
-      const data = await res.json();
-
-      const formatted = data.map(item => item.word);
-
-      cache.current[q] = formatted; // cache result
-      setResults(formatted);
-    } catch (err) {
-      if (err.name !== "AbortError") {
-        setError("Something went wrong");
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <div style={{ width: "300px", margin: "50px auto", fontFamily: "Arial" }}>
-      <h3>Search Autocomplete</h3>
-
-      <input
-        type="text"
-        placeholder="Type something..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        style={{
-          width: "100%",
-          padding: "10px",
-          border: "1px solid #ccc",
-          borderRadius: "5px"
-        }}
-      />
-
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: "red" }}>{error}</p>}
-
-      {results.length > 0 && (
-        <ul
-          style={{
-            border: "1px solid #ccc",
-            borderRadius: "5px",
-            marginTop: "5px",
-            padding: 0,
-            listStyle: "none"
-          }}
-        >
-          {results.map((item, index) => (
-            <li
-              key={index}
-              style={{
-                padding: "8px",
-                borderBottom: "1px solid #eee",
-                cursor: "pointer"
-              }}
-              onClick={() => setQuery(item)}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
+```css
+@keyframes slide {
+  from { left: 0; }
+  to { left: 100px; }
 }
+```
+
+---
+
+## 24. Difference between transition and animation?
+
+**Answer:**
+
+* Transition → simple effect on state change
+* Animation → complex multi-step effects
+
+---
+
+## 25. What is SCSS/SASS?
+
+**Answer:**
+Preprocessor that extends CSS with variables, nesting, functions.
+
+---
+
+## 26. What are CSS variables?
+
+**Answer:**
+
+```css
+:root {
+  --main-color: blue;
+}
+```
+
+---
+
+## 27. What is BEM methodology?
+
+**Answer:**
+CSS naming convention:
+
+* Block
+* Element
+* Modifier
+
+Example:
+
+```css
+button__text--active
+```
+
+---
+
+## 28. What is important keyword in CSS?
+
+**Answer:**
+Overrides all other styles.
+
+```css
+color: red !important;
+```
+
+---
+
+## 29. What is difference between visibility hidden and display none?
+
+**Answer:**
+
+* visibility:hidden → space remains
+* display:none → element removed
+
+---
+
+## 30. What is CSS preprocessors?
+
+**Answer:**
+Tools like SASS, LESS that extend CSS features.
+
+---
+
+# 🚀 Bonus Real Interview Questions
+
+* How does browser render CSS?
+* What is critical rendering path?
+* What is reflow and repaint?
+* How to optimize CSS performance?
+* Difference between mobile-first and desktop-first design?
+
+---
 
 
 
-// Design a **dashboard with multiple APIs
 
-
-const fetchDashboardData = async () => {
-  try {
-    setLoading(true);
-
-    const [users, orders, stats] = await Promise.all([
-      fetch("/api/users").then(res => res.json()),
-      fetch("/api/orders").then(res => res.json()),
-      fetch("/api/stats").then(res => res.json()),
-    ]);
-
-    setUsers(users);
-    setOrders(orders);
-    setStats(stats);
-  } catch (err) {
-    setError("Failed to load data");
-  } finally {
-    setLoading(false);
-  }
-};

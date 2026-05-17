@@ -240,7 +240,7 @@
 // console.log("1");
 // setTimeout(() => console.log("2"), 0);
 // console.log("3");
-// // Output: 1, 3, 2
+// Output: 1, 3, 2
 // ________________________________________
 // 3️⃣ Difference between var, let, and const
 // Keyword	Scope	Re-declare	Re-assign	Hoisted
@@ -274,7 +274,7 @@
 // // Arrow function
 // const add = (a, b) => a + b;
 
-// // Normal function
+// Normal function
 // function add2(a, b) {
 //   return a + b;
 // }

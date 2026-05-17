@@ -1,0 +1,9 @@
+npx @react-native-community/cli@latest init AwesomeProject
+npx react-native doctor
+npx react-native run-android
+
+
+npx @react-native-community/cli@latest init AwesomeProject --version 0.74.3
+
+
+json-server --watch db.json --port 3001
